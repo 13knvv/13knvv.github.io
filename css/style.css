@@ -585,6 +585,7 @@ img {
   position: relative;
   max-width: 730px;
   padding: 0.12em 1.66em 0.416em;
+  margin-right: 36px;
 }
 
 .section-practice__option:hover {
@@ -596,7 +597,7 @@ img {
 
 .section-practice__wave {
   position: absolute;
-  right: -47px;
+  right: -50px;
   top: 0;
   height: 100%;
   width: 60px;
@@ -661,13 +662,12 @@ img {
   content: "";
   position: absolute;
   background-color: black;
-  width: 100%;
+  width: 95%;
   height: 0.125rem;
-  margin-right: -2px;
 }
 
 .section-practice__arrow::after {
-  bottom: 0.458em;
+  top: -100%;
   right: 0;
   width: 20.5%;
   -webkit-transform: rotate(45deg);
@@ -675,7 +675,7 @@ img {
 }
 
 .section-practice__arrow::before {
-  top: 0.333em;
+  top: 100%;
   right: 0;
   width: 20.5%;
   -webkit-transform: rotate(-45deg);
