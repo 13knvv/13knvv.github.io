@@ -1,0 +1,156 @@
+/* ------------------------------------------------ */
+//
+@font-face {
+    font-family: "Gilroy-Bold ☞";
+    font-style: normal;
+    font-weight: normal;
+    src: local("Gilroy-Bold ☞"), url("../font/Gilroy-Bold.woff") format("woff");
+  }
+  @font-face {
+    font-family: "Gilroy-Medium ☞";
+    font-style: normal;
+    font-weight: normal;
+    src: local("Gilroy-Medium ☞"), url("../font/Gilroy-Medium.woff") format("woff");
+  }
+
+:root {
+    --color-bg: rgb(23%, 82%, 73%, 0.09);
+    --color-main: #1A7F72;
+    --color-title: #000000;
+    --color-sub-title: rgba(0, 0, 0, 0.8);
+    --color-body-text: rgba(0, 0, 0, 0.5);
+    --button-bg-gradiant: linear-gradient(180deg, #259385 0%, #159685 100%);
+    box-sizing: border-box; 
+}  
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit; 
+}
+
+body {
+    background-color: var(--color-bg);
+    font-size: 24px;  // 10px(нужно)/14px(родителя)=0.714em 
+    font-family: 'Heebo', sans-serif;
+    color: var(--color-body-text);
+}
+
+@media only screen and (max-width: 1230px) {
+    body {
+      font-size: 18px;
+    }
+  }
+
+@media only screen and (max-width: 980px) {
+  body {
+    font-size: 16px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  body {
+    font-size: 14px;
+  }
+}
+
+.wrapper {
+   max-width: 1920px;
+   margin: 0 auto;
+}
+
+.container {
+    max-width: 1620px;
+    margin: 0 auto;
+    padding: 0 1em;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+h1, h2 {
+    font-family: 'Merienda One', cursive;
+    line-height: 130%;
+}
+
+h1 {
+    font-size: 2.833em;
+    color: #FFFFFF;
+}
+
+@media only screen and (max-width: 980px) {
+    h1 {
+      font-size: 2em;
+    }
+  }
+
+@media only screen and (max-width: 500px) {
+  h1 {
+    font-size: 1.5em;
+  }
+}
+
+h2 {
+    font-size: 2.25em;
+    color: var(--color-title);
+    margin-top: 0;
+}
+
+@media only screen and (max-width: 980px) {
+  h2 {
+    font-size: 1.5em;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  h2 {
+    font-size: 1.4em;
+  }
+}
+
+h3 {
+    font-weight: 500;
+    font-size: 1.333em;
+    line-height: 1.958em;
+    color: var(--color-sub-title);
+    margin-bottom: 0.84em;
+    font-weight: 500;
+}
+
+img {
+  max-width: 100%;
+}
+/* ------------------------------------------------ */
+
+.btn  {
+    background: linear-gradient(180deg, #259385 0%, #159685 100%);
+    box-shadow: 0px 0.833em 1.666em rgba(21, 113, 101, 0.2);
+    border: 0px;
+    border-radius: 2.083em;
+    color: #FFFFFF;
+    font-size: 1em;
+    line-height: 130%;
+    padding: 0.6em 3em;
+    display: inline-block;
+}
+.btn:hover {
+    transform: scale(1.03);
+    transition: 0.3s;
+    cursor: pointer;
+    box-shadow: 0px 0.833em 1.666em rgba(57, 59, 59, 0.342);
+}
+
+.btn:active {
+    transform: scale(1.0);
+}
+
+.btn--big {
+    font-size: 1.25em;
+}
+
+
+@import 'header';
+@import 'main';
+@import 'footer';
