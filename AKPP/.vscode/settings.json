@@ -1,7 +1,0 @@
-{
-    "editor.inlayHints.enabled": false,
-    "editor.parameterHints.enabled": false,
-    "editor.hover.enabled": false,
-}
-
-// добавил "editor.hover.enabled": false, для отмены всплывающей подсказки
