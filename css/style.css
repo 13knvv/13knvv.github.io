@@ -6,15 +6,7 @@
   font-weight: normal;
   src: local("Gilroy-Bold ☞"), url("../font/Gilroy-Bold.woff") format("woff");
 }
-@font-face {
-  font-family: "Gilroy-Medium ☞";
-  font-style: normal;
-  font-weight: normal;
-  src: local("Gilroy-Medium ☞"), url("../font/Gilroy-Medium.woff") format("woff");
-}
 :root {
-  --color-bg: #E5E5E5;
-  --color-body-text: rgba(0, 0, 0, 0.5);
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
@@ -27,36 +19,17 @@
 }
 
 body {
-  background: var(--color-bg);
-  font-size: 24px;
-  font-family: "Open Sans", sans-serif;
-  color: var(--color-body-text);
-}
-
-@media only screen and (max-width: 1230px) {
-  body {
-    font-size: 18px;
-  }
-}
-@media only screen and (max-width: 980px) {
-  body {
-    font-size: 16px;
-  }
-}
-@media only screen and (max-width: 500px) {
-  body {
-    font-size: 14px;
-  }
-}
-.wrapper {
-  max-width: 1920px;
-  margin: 0 auto;
+  background: #444343;
+  font-size: 18px;
+  font-family: sans-serif;
+  color: rgba(0, 0, 0, 0.796);
 }
 
 .container {
   max-width: 1110px;
   margin: 0 auto;
-  padding: 0 1em;
+  padding: 0 2em;
+  background: #ffffff;
 }
 
 a {
@@ -64,8 +37,28 @@ a {
   color: inherit;
 }
 
+a:hover {
+  color: #5b03b9;
+}
+
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Oswald", sans-serif;
+  font-family:  sans-serif;
+}
+
+h1 {
+  margin: 0.3em 0;
+}
+
+h2 {
+  margin: 0;
+}
+
+h3 {
+  margin: 0 0 0.3em 0 ;
+}
+
+h4 {
+  margin: 0.1em 0;
 }
 
 img {
@@ -73,19 +66,61 @@ img {
 }
 
 /* ------------------------------------------------ */
-body {
-  background-color: rgba(7, 7, 7, 0.767);
+section {
+ margin: 1em 0 2em 0;
+}
+
+section  h3 {
+  display: inline-block;
+  background-color: rgba(0, 0, 0, 0.645);
+  border-radius: 5px 50px;
+  padding: 0.2em 1em;
+  color: #ffffff;
+ }
+
+.section__body {
+  margin-left: 1em;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 1em 0;
+}
+
+.header__avatar-wrapp {
+  width: 30%;
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 
-.img__portfolio {
-  width: 20%;
-  margin: 15% 5%;
-  transition: 0.3s;
+.header__avatar {
+  background-image: url(../img/avatar.png);
+  background-position: center;
+  background-size: cover;
+  height: 250px;
+  width: 250px;
+  border-radius: 50%;
 }
 
-.img__portfolio:hover {
-  transform: scale(1.2);
-  cursor: pointer;
+.contacts {
+  width: 65%;
+}
+
+.contacts__link {
+  display: flex;
+  align-items: center;
+  margin: 0.6em 0;
+}
+
+.contacts__links-icon{
+  width: 20px;
+  height: 20px;
+  margin-right: 0.5em;
+}
+
+.contacts__header {
+  display: flex;
+  justify-content: flex-end;
 }
