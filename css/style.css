@@ -183,6 +183,10 @@ section  h3 {
   border-radius: 50%;
 }
 
+.contacts__links {
+  margin-bottom: 1em;
+}
+
 .contacts {
   width: 65%;
 }
@@ -192,7 +196,7 @@ section  h3 {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 0.5em 0;
+    padding: 0;
   }
   .header__avatar-wrapp {
     margin: 0 0 1em 0;
@@ -285,6 +289,10 @@ section  h3 {
   }
 }
 @media only screen and (max-width: 750px) {
+  .cloud {
+    margin-top: 1em;
+  }
+
   .cloud__inner {
     width: 90%;
     border-radius: 1em;
@@ -296,7 +304,7 @@ section  h3 {
 }
 @media only screen and (max-width: 550px) {
   .cloud__inner {
-    width: 100%;
+    width: 95%;
     box-shadow: 5px 5px 8px 0px rgba(34, 60, 80, 0.2);
   }
 }
