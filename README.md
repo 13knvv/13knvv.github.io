@@ -1,7 +1,7 @@
 # [13knvv.github.io](https://13knvv.github.io)
 
 ----------------------------------------
-# StopWar StopWar StopWar StopWar StopWar StopWar StopWar
+# StopWar StopWar StopWar StopWar StopWar
 *********************************
 # Knyazev Vitaly (Frontend developer)
 
